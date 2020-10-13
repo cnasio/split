@@ -12,3 +12,13 @@ ul {
   list-style-type: none;
   color: black;
 }
+
+#wrapper {
+  display: grid;
+  grid-template-areas:
+    'c c c c c'
+    'e . f . g';
+  grid-template-columns: 300px auto minmax(60px, 900px) auto 320px;
+  grid-template-rows: 60px minmax(300px, auto);
+  height: 100vh;
+}

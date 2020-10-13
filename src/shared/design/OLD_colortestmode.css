@@ -1,0 +1,20 @@
+/* ------------------------------------------------- */
+/*       Denna CSS färglägger vissa element          */
+/* för att förenkla felsökning och arbete med @media */
+/* ------------------------------------------------- */
+
+section {
+  background-color: tomato;
+}
+
+.navbar {
+  background-color: #999;
+}
+
+.infopanel_container {
+  background-color: lightgreen;
+}
+
+#leftbar {
+  background-color: thistle;
+}

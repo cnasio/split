@@ -1,17 +1,17 @@
 import React from 'react';
-import { Navbar } from './components/Navbar/Navbar';
+import { Header } from './components/Navigation/Header/Header';
 
 import Routing from './routes/Routing';
-//import '../shared/design/App.css';
+import './shared/design/Global.css';
 
 function App() {
   return (
 
-    <>
+    <div id="wrapper">
     <Routing> 
-      <Navbar />
+      <Header />
     </Routing>
-    </>
+    </div>
   );
 }
 

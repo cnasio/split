@@ -1,0 +1,198 @@
+/* -------------- */
+/* MEDIA QUERIES: */
+/* -------------- */
+
+@media (max-height: 660px) {
+  .infopanel_container {
+    display: none;
+  }
+  .friends_container {
+    grid-row: 1/4;
+  }
+}
+
+@media (min-width: 1098px) {
+  .hamburger {
+    display: none;
+  }
+  .friendslist {
+    display: none;
+  }
+  #leftbar {
+    display: grid;
+  }
+}
+
+@media (max-width: 1098px) {
+  #wrapper {
+    grid-template-areas:
+      'c c'
+      'f g';
+    grid-template-columns: minmax(60px, 900px) 320px;
+  }
+  .friendslist {
+    display: none;
+  }
+  nav {
+    grid-template-areas: 'ca cb cc cd' !important;
+    grid-template-columns: 60px 250px minmax(60px, 900px) 180px !important;
+  }
+
+  #leftbar {
+    display: none;
+  }
+
+  .avatar_dropdown {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .avatar {
+    width: 50px !important;
+    font-size: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  #wrapper {
+    grid-template-areas:
+      'c'
+      'f';
+    grid-template-columns: minmax(60px, 900px) !important;
+  }
+  nav {
+    grid-template-areas: 'ca cb cc cd' !important;
+    grid-template-columns: 60px minmax(60px, 900px) 60px 300px !important;
+  }
+  .navbar {
+    display: none !important;
+  }
+  .avatar_dropdown {
+    display: block;
+  }
+
+  #rightbar {
+    grid-area: f;
+  }
+
+  .friends_container {
+    justify-content: flex-end;
+    grid-template-rows: auto minmax(300px, 600px) 45px;
+  }
+
+  .friendslist {
+    margin-right: 5px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    background: #999;
+    width: 300px;
+    margin-top: 20px;
+    border: 1px solid #444;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .friendsToggler > button {
+    font-size: 0px;
+    width: 70px;
+    height: 70px;
+    padding: 8px 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    border: 1px solid #444;
+  }
+
+  .infopanel_container {
+    display: none;
+  }
+
+  #leftbar {
+    display: none;
+    grid-area: f;
+    margin-right: 20px;
+  }
+
+  .leftbar_navbar > li {
+    width: 98%;
+  }
+
+  .leftbar_navbar > hr {
+    width: 75%;
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburger {
+    grid-area: cc;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .avatar {
+    width: 175px !important;
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 675px) {
+  #wrapper {
+    grid-template-areas:
+      'c'
+      'f';
+    grid-template-columns: auto minmax(auto, 900px);
+  }
+  nav {
+    grid-template-areas: 'ca cb cc' !important;
+    grid-template-columns: 60px minmax(60px, 900px) 60px !important;
+  }
+
+  .infopanel_container {
+    display: none;
+  }
+
+  .notifications_container {
+    display: none !important;
+  }
+
+  #rightbar {
+    grid-area: f;
+  }
+
+  .friends_container {
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+
+  .friendslist {
+    margin-right: 5px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    background: #999;
+    margin-top: 20px;
+    border: 1px solid #444;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .friendsToggler > button {
+    font-size: 0px;
+    width: 70px;
+    height: 70px;
+    padding: 8px 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    border: 1px solid #444;
+  }
+  .hamburger > a:hover {
+    background-color: transparent !important;
+  }
+}

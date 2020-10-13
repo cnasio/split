@@ -1,0 +1,25 @@
+.header {
+  width: 100%;
+  background-color: #666;
+  gap: 10px;
+  grid-area: c;
+  display: grid;
+  grid-template-areas: 'ca cb . cc . cd';
+  grid-template-columns: 60px 240px auto minmax(60px, 900px) auto 300px;
+  grid-template-rows: 60px;
+  border-bottom: 1px solid #444;
+}
+
+.header > img {
+  grid-area: ca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8%;
+}
+
+/* .logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */

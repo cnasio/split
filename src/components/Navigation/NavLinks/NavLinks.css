@@ -1,0 +1,32 @@
+#navlinks {
+  max-width: 400px;
+  grid-area: cc;
+  display: flex;
+  padding-left: 12%;
+  padding-right: 12%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navlinks_active {
+  color: whitesmoke !important;
+  border-bottom: 4px solid whitesmoke;
+  padding: 18px !important;
+}
+
+#navlinks_active:hover {
+  border-radius: 0px !important;
+  background-color: #666 !important;
+}
+
+#navlinks li {
+  text-decoration: none;
+  color: #222;
+  padding: 15px 18px 15px 18px;
+}
+
+#navlinks li:hover {
+  background-color: #888;
+  border-radius: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,6 @@
+#inventory_view {
+  grid-area: f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
