@@ -10,16 +10,30 @@
   border-bottom: 1px solid #444;
 }
 
-.header > img {
+#logo {
   grid-area: ca;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8%;
 }
 
-/* .logo a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+@media (max-width: 1098px) {
+  .header {
+    grid-template-areas: 'ca cb cc cd' !important;
+    grid-template-columns: 60px 250px minmax(60px, 900px) 180px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    grid-template-areas: 'ca cb cc cd' !important;
+    grid-template-columns: 60px minmax(60px, 900px) 60px 300px !important;
+  }
+}
+
+@media (max-width: 675px) {
+  .header {
+    grid-template-areas: 'ca cb cc' !important;
+    grid-template-columns: 60px minmax(60px, 900px) 60px !important;
+  }
+}

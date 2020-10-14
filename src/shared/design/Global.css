@@ -22,3 +22,30 @@ ul {
   grid-template-rows: 60px minmax(300px, auto);
   height: 100vh;
 }
+
+@media (max-width: 1098px) {
+  #wrapper {
+    grid-template-areas:
+      'c c'
+      'f g';
+    grid-template-columns: minmax(60px, 900px) 320px;
+  }
+}
+
+@media (max-width: 900px) {
+  #wrapper {
+    grid-template-areas:
+      'c'
+      'f';
+    grid-template-columns: minmax(60px, 900px) !important;
+  }
+}
+
+@media (max-width: 675px) {
+  #wrapper {
+    grid-template-areas:
+      'c'
+      'f';
+    grid-template-columns: auto minmax(auto, 900px);
+  }
+}

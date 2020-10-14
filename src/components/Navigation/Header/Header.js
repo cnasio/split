@@ -1,6 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import NavLinks from '../NavLinks/NavLinks'
+import NavLinks from './NavLinks/NavLinks'
+import Hamburger from './Hamburger/Hamburger';
+import SearchBar from './SearchBar/SearchBar';
+import NotificationBar from './NotificationBar/NotificationBar';
 import logo from '../../../shared/images/split50.png'
 import './Header.css'
 
@@ -8,8 +12,11 @@ export const Header = () => {
   
   return (
     <header className="header">
-      <img src={logo} alt="" />
+      <Link id="logo" to="/home"><img src={logo} alt="" /></Link>
+      <SearchBar />
       <NavLinks />
+      <Hamburger />
+      <NotificationBar />
     </header>
   )
 }

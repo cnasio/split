@@ -1,0 +1,42 @@
+.notifications_container {
+  grid-area: cd;
+  background-color: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.avatar {
+  margin: auto;
+  width: 175px;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+
+.notifications {
+  padding-right: 1.5em;
+  align-content: space-between;
+}
+
+@media (max-width: 1098px) {
+  .avatar {
+    width: 50px;
+    font-size: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .avatar {
+    width: 175px;
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 675px) {
+  .notifications_container {
+    display: none;
+  }
+}

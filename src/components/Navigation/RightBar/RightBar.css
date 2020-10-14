@@ -1,0 +1,11 @@
+#right_bar {
+  grid-area: g;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+@media (max-width: 900px) {
+  #right_bar {
+    grid-area: f;
+  }
+}

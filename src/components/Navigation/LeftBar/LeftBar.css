@@ -1,0 +1,22 @@
+#left_bar {
+  grid-area: e;
+  display: grid;
+  grid-template-rows: 155px minmax(300px, auto) 70px;
+  margin-top: 50px;
+  align-items: flex-start;
+  text-align: center;
+}
+
+@media (min-width: 1098px) {
+  #left_bar {
+    display: grid;
+  }
+}
+
+@media (max-width: 1098px) {
+  #left_bar {
+    display: none;
+    grid-area: f;
+    margin-right: 20px;
+  }
+}

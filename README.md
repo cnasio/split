@@ -16,24 +16,32 @@ Komponenter i JSX och en css per komponent
 .
 .
 
--=UPPGIFT 1=-
+-=UPPGIFT 2=-
 
-Hej Arasto!
+1. Skapa ett React project (det är OK att använda sig av .tsx, typescript)
 
-Min design är inspirerad av främst Facebook, Linkedin och Esportal
+Kommandon för att starta sitt projekt:
+npx create-react-app projektnamn
+npx create-react-app projektnamn –typescript
 
-Jag började med att undersöka exakt vad Facebook-sidan gjorde när jag minskade fönstret.
-Utefter det så valde jag tre primära width-bryt för min egna sida:
+OBS: Du måste ha Node installerat för att kunna exekvera detta kommando.
+Du kan se vilken version av node du har i din CMD med kommandot: Node -v
 
-1. max-width: 1098px
-2. max-width: 900px
-3. max-width: 675px (från och med denna widthen så designar jag helt för att passa mobil)
+2. Strukturera projektet och ta bort det obehövliga samt lägg till mappar för den struktur som önskas
 
-Jag har lagt ganska mycket tid på detta. Dels för att det är kul och dels för att min plan är att använda designen jag skapar här i mitt fortsatta projekt.
+Exempel: https://github.com/ArastoSahbaei/MondialChefRecipeApplication
+Det fnns ytterligare ett exempel i Google Classroom under fliken ’React -> Projektstruktir i React’
 
-Jag har bara lekt runt i CSS-filerna tills det ser ut som jag velat.
-Du kommer säkert att hitta otaligt med redundant kod/förbättringspotential i min kod. :)
+3. Applicera de vyer som önskas för din applikation (minst 2 vyer)
 
-Du kan använda colortestmode.css för att enklare se hur mina @media-settings fungerar.
+4. Installera react-router-dom paketet i ditt projekt och skapa en komponent som hanterar
+   navigationen i din applikation.
 
-// Niklas
+dokumentation för react-router-dom: https://reactrouter.com/web/guides/quick-start
+
+5. I applikationen skall man kunna logga in och se det användarnamn som användes för att logga in i applikationen som även skall sparas i webbläsaren. (OK att hårdkoda detta)
+
+För instruktioner om hur man sparar variabler i webbläsaren se gärna:
+https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+
+6. Ladda upp ditt projekt till Github

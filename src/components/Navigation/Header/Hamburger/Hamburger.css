@@ -1,0 +1,38 @@
+.hamburger {
+  color: #222;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5px 2px 5px 2px;
+}
+
+@media (min-width: 1098px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 1098px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    grid-area: cc;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 675px) {
+  .hamburger > div:hover {
+    background-color: transparent !important;
+  }
+}
