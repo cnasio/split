@@ -19,21 +19,21 @@
 
 @media (max-width: 1098px) {
   .header {
-    grid-template-areas: 'ca cb cc cd' !important;
-    grid-template-columns: 60px 250px minmax(60px, 900px) 180px !important;
+    grid-template-areas: 'ca cb cc cd';
+    grid-template-columns: 60px 250px minmax(60px, 900px) 180px;
   }
 }
 
 @media (max-width: 900px) {
   .header {
-    grid-template-areas: 'ca cb cc cd' !important;
-    grid-template-columns: 60px minmax(60px, 900px) 60px 300px !important;
+    grid-template-areas: 'ca cb cc cd';
+    grid-template-columns: 60px minmax(60px, 900px) 60px 300px;
   }
 }
 
 @media (max-width: 675px) {
   .header {
-    grid-template-areas: 'ca cb cc' !important;
-    grid-template-columns: 60px minmax(60px, 900px) 60px !important;
+    grid-template-areas: 'ca cb cc';
+    grid-template-columns: 60px minmax(60px, 900px) 60px;
   }
 }

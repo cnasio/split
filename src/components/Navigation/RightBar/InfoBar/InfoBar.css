@@ -13,9 +13,3 @@
     display: none;
   }
 }
-
-@media (max-width: 675px) {
-  #info_bar {
-    display: none;
-  }
-}

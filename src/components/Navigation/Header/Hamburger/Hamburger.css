@@ -4,8 +4,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 5px 2px 5px 2px;
+  width: 90%;
+  padding-bottom: 2px;
+}
+
+.hamburger:hover {
+  background-color: #888;
+  border-radius: 10px;
+  margin: 5px 0;
+  cursor: pointer;
 }
 
 @media (min-width: 1098px) {
@@ -32,7 +39,7 @@
 }
 
 @media (max-width: 675px) {
-  .hamburger > div:hover {
-    background-color: transparent !important;
+  .hamburger:hover {
+    background-color: transparent;
   }
 }

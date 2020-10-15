@@ -10,13 +10,12 @@
 
 #navlinks_active {
   color: whitesmoke !important;
-  border-bottom: 4px solid whitesmoke;
-  padding: 18px !important;
+  border-bottom: 5px solid whitesmoke;
+  margin-top: 5px;
 }
 
 #navlinks_active:hover {
   border-radius: 0px !important;
-  background-color: #666 !important;
 }
 
 #navlinks li {
