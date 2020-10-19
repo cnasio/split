@@ -1,9 +1,16 @@
-.home_view {
+.auth {
   grid-area: f;
   width: 90%;
   max-width: 17rem;
   max-height: 35rem;
   margin: auto;
-  padding: 1rem 5rem;
+  padding: 0 2rem 2rem;
   text-align: center;
+}
+
+.auth > form {
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 675px) {
 }

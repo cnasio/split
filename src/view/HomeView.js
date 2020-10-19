@@ -1,26 +1,33 @@
-import React, {useEffect, useState} from 'react'
+import React, { useContext, useState } from 'react'
+import service from '../shared/api/service/service'
 
+import Card from '../components/UIElements/Card/Card'
+import { UserContext } from '../shared/context/UserContext'
 import '../shared/design/HomeView.css'
 
-export const HomeView = () => {
+const HomeView = () => {
 
-  const [random, setRandom] = useState()
-  const [userEmail, setUserEmail] = useState()
+  const [character, setCharacter] = useState()
+  const [currentUser, setCurrentUser] = useContext(UserContext)
 
-  useEffect(() => {
-    const userName = localStorage.getItem('email')
-    userName && setUserEmail(userName);
-    return () => {
-    }
-  }, [random])
+  const retrieveCharacterFromExternalApi = () => {
+    service
+      .getRandomStarWarsCharacter()
+      .then(response => {
+        setCharacter(response.data.name)
+      })
+  }
 
   return (
-    <div id="home_view">
-      <p>HomeView</p><br />
-      <p>{userEmail}</p>
-      <p>{random}</p>
-      
-      <button onClick={() => setRandom('å@ä.ö')}>Update the value of random state</button>
-    </div>
+    <>
+      <Card className="home_view">
+        <button onClick={() => retrieveCharacterFromExternalApi()}>Make API Call</button>
+        <p>HomeView</p>
+        <p>Currently logged in user: {currentUser}</p>
+        <p>{character ? character : ''}</p>
+      </Card>
+    </>
   )
 }
+
+export default HomeView;

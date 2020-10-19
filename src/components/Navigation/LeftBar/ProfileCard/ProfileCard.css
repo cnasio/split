@@ -8,7 +8,7 @@
     'l1 . l2';
   grid-template-rows: 50px 58px 45px;
   background-color: #666 !important;
-  /* border-radius: 20px; */
+  border-radius: 20px;
   background: #999;
   border: 1px solid #444;
   align-items: center;

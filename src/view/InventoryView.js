@@ -1,11 +1,13 @@
 import React from 'react'
 
-import '../shared/design/Inventory.css'
+import '../shared/design/InventoryView.css'
 
-export const InventoryView = () => {
+const InventoryView = () => {
   return (
     <div id="inventory_view">
       InventoryView
     </div>
   )
 }
+
+export default InventoryView;
