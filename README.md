@@ -1,24 +1,4 @@
--= TO DO =-
-
-- function to manage showing and hiding friends list
-- making friends list override other content in max-width: 900px (buggy)
-- login functionality with dummy user
-- implement icons from material icons or similar
-- build avatar component
-- build button component
-- build card component
-- hamburger functionality (show/hide leftBar? or something better?)
-- build LoadingSpinner component (from MERN project)
-- build ErrorModal component
-- build Modal component
-
--= VERSIONS =-
-v.20.10.15:
-
-- Design fully implemented from HTML version.
--
-
--=UPPGIFT 2=-
+- -=UPPGIFT 2=-
 
 > > DONE 1. Skapa ett React project (det är OK att använda sig av .tsx, typescript)
 
@@ -40,9 +20,29 @@ v.20.10.15:
 
 > > dokumentation för react-router-dom: https://reactrouter.com/web/guides/quick-start
 
-5. I applikationen skall man kunna logga in och se det användarnamn som användes för att logga in i applikationen som även skall sparas i webbläsaren. (OK att hårdkoda detta)
+> > DONE 5. I applikationen skall man kunna logga in och se det användarnamn som användes för att logga in i applikationen som även skall sparas i webbläsaren. (OK att hårdkoda detta)
 
-För instruktioner om hur man sparar variabler i webbläsaren se gärna:
-https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+> > För instruktioner om hur man sparar variabler i webbläsaren se gärna:
+> > https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 
-6. Ladda upp ditt projekt till Github
+> > DONE 6. Ladda upp ditt projekt till Github
+
+-= TO DO =-
+
+- function to manage showing and hiding friends list
+- making friends list override other content in max-width: 900px (buggy)
+- implement icons from material icons or similar
+- build avatar component
+- hamburger functionality (show/hide leftBar? or something better?)
+- build LoadingSpinner component (from MERN project)
+- build Modal/ErrorModal component
+
+-= VERSIONS =-
+v.20.10.15:
+
+- Design fully implemented from HTML version.
+
+v.20.10.20:
+
+- Context user implemented so it's available in entire app.
+- Design changes overall, darker theme, button and other UI design added.
