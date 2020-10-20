@@ -4,13 +4,10 @@
   max-width: 17rem;
   max-height: 35rem;
   margin: auto;
-  padding: 0 2rem 2rem;
+  padding: 1rem 5rem;
   text-align: center;
 }
 
 .auth > form {
   padding-bottom: 1rem;
-}
-
-@media (max-width: 675px) {
 }

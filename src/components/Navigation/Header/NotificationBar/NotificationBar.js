@@ -18,6 +18,7 @@ import './NotificationBar.css'
 </div> */}
 
 
+// TO DO: If name längre än typ 20 tecken, ändra till att bara visa första namnet
 
 const NotificationBar = () => {
 
@@ -25,13 +26,13 @@ const NotificationBar = () => {
 
   return (
   <div className="notifications_container">
-    {currentUser && (<><div className="avatar">
-      [Avatar] {currentUser}
+    {currentUser.name && (<><div className="avatar">
+      <img src={currentUser.image} alt='' /> {currentUser.name.split(' ')[0]}
     </div>
     <div className="notifications">
     [Notifications]
   </div></>)}
-    {!currentUser && (<div className="notifications">
+    {!currentUser.name && (<div className="notifications">
       <Link to='/auth'>[Sign In]</Link>
     </div>)}
   </div>

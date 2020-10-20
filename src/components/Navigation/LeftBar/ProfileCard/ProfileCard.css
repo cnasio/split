@@ -1,41 +1,48 @@
 .profile_card {
   grid-row: 1;
-  margin-left: 20px;
+  margin: 5px 0 0 10px;
   display: grid;
   grid-template-areas:
     '. li .'
     'ln ln ln'
     'l1 . l2';
-  grid-template-rows: 50px 58px 45px;
-  background-color: #666 !important;
+  grid-template-rows: 60px 88px 40px;
   border-radius: 20px;
-  background: #999;
-  border: 1px solid #444;
+  background: #272b30;
+  border: 1px solid #111;
   align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
 #profile_card_name {
-  color: whitesmoke;
   text-decoration: none;
+  color: whitesmoke;
   font-size: 26px;
   grid-area: ln;
 }
 
 #avatarpanel_link_left {
   grid-area: l1;
+  color: whitesmoke;
   text-decoration: none;
-  color: #222;
   padding-left: 30px;
 }
 
 #avatarpanel_link_right {
   grid-area: l2;
+  color: whitesmoke;
   text-decoration: none;
-  color: #222;
   padding-right: 30px;
 }
 
 #profile_card_image {
   grid-area: li;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
+}
+
+#profile_card_image > img {
+  width: 85%;
+  border: 2px solid #63fc5d;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 50%;
 }

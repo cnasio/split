@@ -2,8 +2,10 @@ import React, { useContext, useState } from 'react'
 import service from '../shared/api/service/service'
 
 import Card from '../components/UIElements/Card/Card'
+import Button from '../components/FormElements/Button/Button'
 import { UserContext } from '../shared/context/UserContext'
 import '../shared/design/HomeView.css'
+
 
 const HomeView = () => {
 
@@ -21,9 +23,9 @@ const HomeView = () => {
   return (
     <>
       <Card className="home_view">
-        <button onClick={() => retrieveCharacterFromExternalApi()}>Make API Call</button>
+        <Button  onClick={() => retrieveCharacterFromExternalApi()}>MAKE API CALL</Button>
         <p>HomeView</p>
-        <p>Currently logged in user: {currentUser}</p>
+        <p>Currently logged in user: {currentUser.name}</p>
         <p>{character ? character : ''}</p>
       </Card>
     </>

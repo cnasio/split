@@ -15,16 +15,14 @@ const AuthView = () => {
       name: "Niklas Hilmersson",
       email: 'cnas@split.com',
       password: 'testing',
-      image:
-        "https://vignette.wikia.nocookie.net/steamtradingcards/images/3/34/Day_of_the_Tentacle_Remastered_Card_3.png/revision/latest?cb=20160323033246",
+      image: 'https://www.thispersondoesnotexist.com/image',
     },
     {
       id: "u2",
-      name: "Hilmer Niklasson",
+      name: "Hilmer Löjligt Långt Namn Niklasson",
       email: 'cnas2@split.com',
       password: 'testing2',
-      image:
-        "https://vignette.wikia.nocookie.net/steamtradingcards/images/3/34/Day_of_the_Tentacle_Remastered_Card_3.png/revision/latest?cb=20160323033246",
+      image: 'https://www.thispersondoesnotexist.com/image',
     },
     
   ];
@@ -39,14 +37,13 @@ const AuthView = () => {
 
   // Dummy-login tills DB och Backend är på plats
   // TODO: Show friendsbar if successful login
-  const submitHandler = e => {
-    e.preventDefault();
+  const submitHandler = () => {
 
     const existingUser = DUMMY_USERS.filter(user => user.email === inputEmail)
 
     if(isLoginMode) {
       if(existingUser && existingUser[0].password === inputPassword) {
-        setCurrentUser(existingUser[0].email)
+        setCurrentUser(existingUser[0])
          localStorage.setItem('DUMMY_email', existingUser[0].email)
          localStorage.setItem('DUMMY_password', existingUser[0].password)
          history.push('/home')
@@ -63,7 +60,7 @@ const AuthView = () => {
       <Card className='auth'>
         <h2>{isLoginMode ? 'Login' : 'Sign up'}</h2>
         <hr/>
-        <form onSubmit={submitHandler}>
+        <form onSubmit={() => submitHandler()}>
           {!isLoginMode && (
             <Input id='name' element="input" type="name" placeholder="Name" label="Name" onChange={e => setInputName(e.target.value)} />
           )}
@@ -72,9 +69,9 @@ const AuthView = () => {
           
           <Input id='password' element="input" type="password" label="Password" onChange={e => setInputPassword(e.target.value)} />
           <br />
-          <Button type="submit">{isLoginMode ? "Login" : "Sign up"}</Button>
+          <Button type="submit">{isLoginMode ? "LOGIN" : "SIGN UP"}</Button>
         </form>
-          <Button inverse onClick={() => setIsLoginMode(prevMode => !prevMode)}>Change to {isLoginMode ? "Sign up" : "Login"}</Button>
+          <Button inverse onClick={() => setIsLoginMode(prevMode => !prevMode)}>CHANGE TO {isLoginMode ? "SIGN UP" : "LOGIN"}</Button>
 
       </Card>
     </>

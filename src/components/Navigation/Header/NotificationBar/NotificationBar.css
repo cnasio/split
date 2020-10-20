@@ -16,6 +16,13 @@
   align-items: center;
 }
 
+.avatar > img {
+  width: 40px;
+  margin-right: 10%;
+  border-radius: 50%;
+  border: 1px solid #63fc5d;
+}
+
 .notifications {
   padding-right: 1.5em;
   align-content: space-between;
@@ -23,14 +30,12 @@
 
 @media (max-width: 1098px) {
   .avatar {
-    width: 50px;
     font-size: 0;
   }
 }
 
 @media (max-width: 900px) {
   .avatar {
-    width: 175px;
     font-size: 100%;
   }
 }

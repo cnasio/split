@@ -1,17 +1,17 @@
 .search {
   grid-area: cb;
   border-radius: 20px;
-  background-color: rgb(177, 177, 177);
+  background-color: rgb(180, 180, 180);
   margin: 8px 2px 8px 2px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #444;
+  border: 1px solid #111;
 }
 
 .search > input {
   border-radius: 20px;
-  background-color: rgb(177, 177, 177);
+  background-color: rgb(180, 180, 180);
   width: 100%;
   margin-left: 5px;
   outline: none;
@@ -20,10 +20,10 @@
 }
 
 .search > button {
-  background-color: rgb(177, 177, 177);
+  background-color: rgb(180, 180, 180);
+  border-radius: 20px;
   padding: 4px;
-  margin-right: 10px;
+  margin: 2px 5px 0 5px;
   border: none;
-  margin-left: 5px;
   cursor: pointer;
 }

@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Button from '../../../FormElements/Button/Button'
+import InsertCommentIcon from '@material-ui/icons/InsertComment';
+
 import './FriendsBar.css'
 
 const FriendsBar = () => {
@@ -7,7 +10,7 @@ const FriendsBar = () => {
     <div className="friends_bar">
     <div id="friendslist" className="friendslist">Friends List</div>
     <div className="friends_button">
-      <button>Friends</button>
+      <Button ><InsertCommentIcon />FRIENDS</Button>
     </div>
   </div>
   );
