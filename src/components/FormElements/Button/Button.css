@@ -52,11 +52,3 @@
   border-color: #ccc;
   cursor: not-allowed;
 }
-
-.button--small {
-  font-size: 0.8rem;
-}
-
-.button--big {
-  font-size: 1.5rem;
-}

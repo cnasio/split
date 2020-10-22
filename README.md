@@ -1,42 +1,22 @@
--=UPPGIFT 2=-
+-===========--===-
+-= TO DO / BUGS =-
+-================-
 
-> > DONE 1. Skapa ett React project (det är OK att använda sig av .tsx, typescript)
-
-> > Kommandon för att starta sitt projekt:
-> > npx create-react-app projektnamn
-> > npx create-react-app projektnamn –typescript
-
-> > OBS: Du måste ha Node installerat för att kunna exekvera detta kommando.
-> > Du kan se vilken version av node du har i din CMD med kommandot: Node -v
-
-> > DONE 2. Strukturera projektet och ta bort det obehövliga samt lägg till mappar för den struktur som önskas
-
-> > Exempel: https://github.com/ArastoSahbaei/MondialChefRecipeApplication
-> > Det fnns ytterligare ett exempel i Google Classroom under fliken ’React -> Projektstruktir i React’
-
-> > DONE 3. Applicera de vyer som önskas för din applikation (minst 2 vyer)
-
-> > DONE 4. Installera react-router-dom paketet i ditt projekt och skapa en komponent som hanterar navigationen i din applikation.
-
-> > dokumentation för react-router-dom: https://reactrouter.com/web/guides/quick-start
-
-> > DONE 5. I applikationen skall man kunna logga in och se det användarnamn som användes för att logga in i applikationen som även skall sparas i webbläsaren. (OK att hårdkoda detta)
-
-> > För instruktioner om hur man sparar variabler i webbläsaren se gärna:
-> > https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
-
-> > DONE 6. Ladda upp ditt projekt till Github
-
--= TO DO/BUGS =-
-
-- build avatar component
-- build LoadingSpinner component (from MERN project)
+- Friendslist ska overlappa all annan content istället för att dölja main
+- Refactorera app.js: lägg till MainNavigation i Navigation som samlar leftbar, header, rightbar
+- build LoadingSpinner component
 - build Modal/ErrorModal component
 - fix bug with leftbar when expanding hamburger and then expanding windows width
-- center leftbar when expanded by hamburger (also profilecard & leftbarnavlinks now lining up correctly)
+- fix bug med leftbar expandarad av hamburger, när man ökar width så återkommer inte main och om man stänger den så återkommer inte leftbar vid ökar width
 - Add basic search functionality
 
+- BACKEND
+- DATABASE
+
+-============-
 -= VERSIONS =-
+-============-
+
 v.20.10.15:
 
 - Design fully implemented from HTML version.
@@ -54,3 +34,9 @@ v.20.10.21:
 - Added sign in button
 - Reworked overall CSS, all views now share #view in global.css
 - many bug fixes with CSS
+
+v.20.10.22:
+
+- Refactored all CSS code
+- Fixed alignment in Avatar component
+- Added more design, many new hover effects

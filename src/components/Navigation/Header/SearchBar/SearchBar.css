@@ -27,3 +27,7 @@
   border: none;
   cursor: pointer;
 }
+
+.search > button:hover {
+  color: #63fc5d;
+}

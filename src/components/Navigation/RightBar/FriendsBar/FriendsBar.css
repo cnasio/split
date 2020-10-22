@@ -1,4 +1,4 @@
-#friends_bar {
+#friends__bar {
   grid-row: 2/4;
   height: auto;
   display: grid;
@@ -20,14 +20,14 @@
   align-items: center;
 }
 
-.friends_button {
+.friends__button {
   grid-row: 3;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
 
-.friends_button > Button {
+.friends__button > Button {
   font-size: 16px;
   display: flex;
   justify-content: space-between;
@@ -37,12 +37,12 @@
   margin-bottom: 10px;
 }
 
-.friends_button > Button > .MuiSvgIcon-root {
+.friends__button > Button > .MuiSvgIcon-root {
   display: none;
 }
 
 @media (max-height: 660px) {
-  #friends_bar {
+  #friends__bar {
     grid-row: 1/4;
   }
 }
@@ -60,7 +60,7 @@
 }
 
 @media (max-width: 900px) {
-  #friends_bar {
+  #friends__bar {
     justify-content: flex-end;
     grid-template-rows: auto minmax(300px, 600px) 45px;
   }
@@ -72,7 +72,7 @@
     justify-content: center;
     align-items: center;
   }
-  .friends_button > Button {
+  .friends__button > Button {
     font-size: 0px;
     width: 70px;
     height: 70px;
@@ -81,7 +81,7 @@
     justify-content: center;
   }
 
-  .friends_button > Button > .MuiSvgIcon-root {
+  .friends__button > Button > .MuiSvgIcon-root {
     display: block;
     padding-top: 2px;
     font-size: 32px;

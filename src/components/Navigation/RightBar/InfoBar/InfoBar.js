@@ -5,7 +5,7 @@ import './InfoBar.css'
 
 const InfoBar = () => {
   return (
-    <div id="info_bar">
+    <div id="info__bar">
       <InfoPanel />
       <InfoPanel />
     </div>

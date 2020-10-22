@@ -9,6 +9,10 @@ import NotificationBar from './NotificationBar/NotificationBar';
 import logo from '../../../shared/images/split50.png'
 import './Header.css'
 
+
+// BUGG: logo-länken visar home över leftbar när man öppnat leftbar
+// från hamburger och inte redan är i homeview
+
 const Header = () => {
   return (
     <header className="header">

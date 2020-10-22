@@ -1,4 +1,4 @@
-.profile_card {
+.profile__card {
   grid-row: 1;
   margin: 5px 0 0 10px;
   display: grid;
@@ -14,49 +14,49 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
-#profile_card_image {
+#profile__card_image {
   grid-area: li;
   padding: 0 0 30px 5px;
 }
 
-#profile_card_image > img {
+#profile__card_image > img {
   width: 104px;
   border: 2px solid #63fc5d;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   border-radius: 50%;
 }
 
-#profile_card_image > img:hover {
+#profile__card_image > img:hover {
   border: 2px solid whitesmoke;
 }
 
-#profile_card_name {
+#profile__card_name {
   grid-area: ln;
   text-decoration: none;
   color: whitesmoke;
   font-size: 26px;
 }
 
-#profile_card_name:hover {
+#profile__card_name:hover {
   color: #63fc5d;
 }
 
-#avatarpanel_link_left {
+#avatarpanel__link_left {
   grid-area: l1;
   color: whitesmoke;
   text-decoration: none;
   padding: 0 0 0px 30px;
 }
 
-#avatarpanel_link_left:hover {
+#avatarpanel__link_left:hover {
   color: #63fc5d;
 }
 
-#avatarpanel_link_right:hover {
+#avatarpanel__link_right:hover {
   color: #fc5d5d;
 }
 
-#avatarpanel_link_right {
+#avatarpanel__link_right {
   grid-area: l2;
   color: whitesmoke;
   text-decoration: none;

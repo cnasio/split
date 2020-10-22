@@ -1,15 +1,15 @@
-#info_bar {
+#info__bar {
   grid-row: 1;
 }
 
 @media (max-height: 660px) {
-  #info_bar {
+  #info__bar {
     display: none;
   }
 }
 
 @media (max-width: 900px) {
-  #info_bar {
+  #info__bar {
     display: none;
   }
 }

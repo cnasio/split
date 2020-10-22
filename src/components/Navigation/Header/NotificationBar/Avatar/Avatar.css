@@ -1,8 +1,13 @@
 .avatar {
   margin: auto;
   width: 175px;
-  padding: 0 1rem 2px;
   color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar > p {
   display: flex;
   align-items: center;
 }

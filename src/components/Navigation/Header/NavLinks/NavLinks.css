@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.navlink_active {
+.navlink--active {
   color: #63fc5d !important;
   border-bottom: 5px solid #63fc5d;
   transition: border-bottom 0.15s ease-in-out;

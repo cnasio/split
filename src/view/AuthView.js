@@ -51,7 +51,6 @@ const AuthView = () => {
       if(existingUser && existingUser[0].password === inputPassword) {
         setCurrentUser(existingUser[0])
          localStorage.setItem('DUMMY_email', existingUser[0].email)
-         localStorage.setItem('DUMMY_password', existingUser[0].password)
          history.push('/home')
       } else {
         alert('Email or password incorrect. Please try again.')

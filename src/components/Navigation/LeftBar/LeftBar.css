@@ -1,4 +1,4 @@
-#left_bar {
+#left__bar {
   grid-area: e;
   display: grid;
   grid-template-rows: 155px minmax(300px, auto) 70px;
@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-.leftbar_navlinks {
+.leftbar__navlinks {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -45,13 +45,13 @@
 }
 
 @media (min-width: 1098px) {
-  #left_bar {
+  #left__bar {
     display: grid;
   }
 }
 
 @media (max-width: 1098px) {
-  #left_bar {
+  #left__bar {
     display: none;
     grid-area: f;
     margin-right: 20px;

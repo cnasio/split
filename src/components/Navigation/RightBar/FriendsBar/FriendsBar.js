@@ -8,7 +8,7 @@ import './FriendsBar.css'
 const FriendsBar = () => {
 
   const friendsButtonHandler = () => {
-    const leftBarElement = document.getElementById('left_bar')
+    const leftBarElement = document.getElementById('left__bar')
     const viewElement = document.getElementById('view')
     const friendsElement = document.getElementById('friendslist')
    
@@ -28,9 +28,9 @@ const FriendsBar = () => {
   
   
   return (
-      <div id="friends_bar">
+      <div id="friends__bar">
         <div id="friendslist" className="friendslist">Friends List</div>
-          <div className="friends_button">
+          <div className="friends__button">
             <Button onClick={friendsButtonHandler} ><ForumRoundedIcon />FRIENDS</Button>
           </div>
       </div>

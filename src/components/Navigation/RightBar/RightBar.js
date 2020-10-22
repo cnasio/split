@@ -11,7 +11,7 @@ const RightBar = () => {
 
   return (
     <>
-      {currentUser.email && (<aside id="right_bar">
+      {currentUser.email && (<aside id="right__bar">
         <InfoBar />
         <FriendsBar />
       </aside>)}

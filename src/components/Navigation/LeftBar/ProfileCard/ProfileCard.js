@@ -15,11 +15,11 @@ const ProfileCard = () => {
   return (
       <>
         {currentUser.email && (
-          <div className="profile_card">
-          <Link id="profile_card_image" to="/inventory"><img src={currentUser.image} alt="" /></Link>
-          <Link id="profile_card_name" to="/inventory">{characterAmount < 30 ? currentUser.name : currentUser.name.split(' ')[0]}</Link>
-          <Link id="avatarpanel_link_left" to="#">Profile</Link>
-          <Link id="avatarpanel_link_right" to="#">Log out</Link>
+          <div className="profile__card">
+          <Link id="profile__card_image" to="/inventory"><img src={currentUser.image} alt="" /></Link>
+          <Link id="profile__card_name" to="/inventory">{characterAmount < 30 ? currentUser.name : currentUser.name.split(' ')[0]}</Link>
+          <Link id="avatarpanel__link_left" to="#">Profile</Link>
+          <Link id="avatarpanel__link_right" to="#">Log out</Link>
       </div>
         )}
     </> 

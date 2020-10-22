@@ -7,9 +7,9 @@ const LeftBarNavLink = ({link, title, Icon}) => {
   const matches = useMediaQuery('(min-width:1098px)')
   
   const leftBarHiderHandler = () => {
-    const leftBarElement = document.getElementById('left_bar')
+    const leftBarElement = document.getElementById('left__bar')
     const viewElement = document.getElementById('view')
-    const friendsElement = document.getElementById('friends_bar')
+    const friendsElement = document.getElementById('friends__bar')
 
     if(matches) {
       leftBarElement.style.display = 'grid'

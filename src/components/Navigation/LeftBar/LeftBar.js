@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 import CategoryRoundedIcon from '@material-ui/icons/CategoryRounded';
-import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
+import GroupRoundedIcon from '@material-ui/icons/GroupRounded';
 
 import ProfileCard from './ProfileCard/ProfileCard';
 import LeftBarNavLink from './LeftBarNavLinks/LeftBarNavLinks';
@@ -15,12 +15,12 @@ const LeftBar = () => {
   return (
     <>
     {currentUser.email &&
-      (<aside id="left_bar">
+      (<aside id="left__bar">
       <ProfileCard />
-      <nav className="leftbar_navlinks">
+      <nav className="leftbar__navlinks">
         <LeftBarNavLink link="home" title="Home" Icon={HomeRoundedIcon} />
         <LeftBarNavLink link="inventory" title="Inventory" Icon={CategoryRoundedIcon} />
-        <LeftBarNavLink link="community" title="Community" Icon={PeopleAltIcon} />
+        <LeftBarNavLink link="community" title="Community" Icon={GroupRoundedIcon} />
       </nav>
     </aside>)}
     </>

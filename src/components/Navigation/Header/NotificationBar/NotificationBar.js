@@ -28,7 +28,7 @@ const NotificationBar = () => {
   const [currentUser] = useContext(UserContext)
 
   return (
-  <div className="notifications_container">
+  <div className="notifications__container">
     {currentUser.email && (
       <>
         <Avatar />
