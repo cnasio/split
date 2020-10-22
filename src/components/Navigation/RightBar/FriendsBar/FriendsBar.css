@@ -84,5 +84,6 @@
   .friends_button > Button > .MuiSvgIcon-root {
     display: block;
     padding-top: 2px;
+    font-size: 32px;
   }
 }

@@ -2,8 +2,8 @@
   max-width: 400px;
   grid-area: cc;
   display: flex;
-  padding-left: 12%;
-  padding-right: 12%;
+  padding-left: 32%;
+  padding-right: 32%;
   justify-content: center;
   align-items: center;
 }

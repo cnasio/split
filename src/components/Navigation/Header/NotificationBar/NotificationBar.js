@@ -1,7 +1,9 @@
 import React, { useContext } from 'react';
 import { useHistory } from 'react-router-dom'
 
+import Avatar from './Avatar/Avatar';
 import Button from '../../../FormElements/Button/Button'
+import Notifications from './Notifications/Notifications';
 import { UserContext } from '../../../../shared/context/UserContext'
 import './NotificationBar.css'
 
@@ -27,12 +29,12 @@ const NotificationBar = () => {
 
   return (
   <div className="notifications_container">
-    {currentUser.email && (<><div className="avatar">
-      <img src={currentUser.image} alt='' /> {currentUser.name.split(' ')[0]}
-    </div>
-    <div className="notifications">
-    [Notifications]
-  </div></>)}
+    {currentUser.email && (
+      <>
+        <Avatar />
+        <Notifications />
+      </>
+    )}
     {!currentUser.email && (<div className="notifications">
       <Button inverse onClick={() => history.push('auth')}>Sign In</Button>
     </div>)}

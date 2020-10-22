@@ -7,40 +7,6 @@
   align-items: center;
 }
 
-.avatar {
-  margin: auto;
-  width: 175px;
-  padding-left: 1em;
-  padding-right: 1em;
-  color: whitesmoke;
-  display: flex;
-  align-items: center;
-}
-
-.avatar > img {
-  width: 40px;
-  margin-right: 10%;
-  border-radius: 50%;
-  border: 1px solid #63fc5d;
-}
-
-.notifications {
-  padding-right: 1.5em;
-  align-content: space-between;
-}
-
-@media (max-width: 1098px) {
-  .avatar {
-    font-size: 0;
-  }
-}
-
-@media (max-width: 900px) {
-  .avatar {
-    font-size: 100%;
-  }
-}
-
 @media (max-width: 675px) {
   .notifications_container {
     display: none;

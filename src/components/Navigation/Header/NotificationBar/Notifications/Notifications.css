@@ -1,0 +1,9 @@
+.notifications {
+  padding: 4px 1em 0 0;
+  align-content: space-between;
+}
+
+.notifications > .MuiSvgIcon-root:hover {
+  color: #63fc5d;
+  cursor: pointer;
+}

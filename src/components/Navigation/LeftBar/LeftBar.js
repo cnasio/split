@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import HomeIcon from '@material-ui/icons/Home';
-import LocalMallIcon from '@material-ui/icons/LocalMall';
+import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
+import CategoryRoundedIcon from '@material-ui/icons/CategoryRounded';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 
 import ProfileCard from './ProfileCard/ProfileCard';
@@ -18,8 +18,8 @@ const LeftBar = () => {
       (<aside id="left_bar">
       <ProfileCard />
       <nav className="leftbar_navlinks">
-        <LeftBarNavLink link="home" title="Home" Icon={HomeIcon} />
-        <LeftBarNavLink link="inventory" title="Inventory" Icon={LocalMallIcon} />
+        <LeftBarNavLink link="home" title="Home" Icon={HomeRoundedIcon} />
+        <LeftBarNavLink link="inventory" title="Inventory" Icon={CategoryRoundedIcon} />
         <LeftBarNavLink link="community" title="Community" Icon={PeopleAltIcon} />
       </nav>
     </aside>)}

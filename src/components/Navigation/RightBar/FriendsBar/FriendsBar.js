@@ -1,8 +1,7 @@
 import React from 'react';
 
 import Button from '../../../FormElements/Button/Button'
-import InsertCommentIcon from '@material-ui/icons/InsertComment';
-
+import ForumRoundedIcon from '@material-ui/icons/ForumRounded';
 
 import './FriendsBar.css'
 
@@ -32,7 +31,7 @@ const FriendsBar = () => {
       <div id="friends_bar">
         <div id="friendslist" className="friendslist">Friends List</div>
           <div className="friends_button">
-            <Button onClick={friendsButtonHandler} ><InsertCommentIcon />FRIENDS</Button>
+            <Button onClick={friendsButtonHandler} ><ForumRoundedIcon />FRIENDS</Button>
           </div>
       </div>
   );

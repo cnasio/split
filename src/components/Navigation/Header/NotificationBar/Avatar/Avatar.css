@@ -1,0 +1,37 @@
+.avatar {
+  margin: auto;
+  width: 175px;
+  padding: 0 1rem 2px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+
+.avatar > p:hover {
+  color: #63fc5d;
+  cursor: pointer;
+}
+
+.avatar > img {
+  width: 40px;
+  margin-right: 10%;
+  border-radius: 50%;
+  border: 1px solid #63fc5d;
+}
+
+.avatar > img:hover {
+  border: 1px solid whitesmoke;
+  cursor: pointer;
+}
+
+@media (max-width: 1098px) {
+  .avatar {
+    font-size: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .avatar {
+    font-size: 100%;
+  }
+}
