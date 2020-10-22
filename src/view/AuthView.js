@@ -5,7 +5,6 @@ import Card from '../components/UIElements/Card/Card'
 import Input from '../components/FormElements/Input/Input'
 import Button from '../components/FormElements/Button/Button'
 import { UserContext } from '../shared/context/UserContext'
-import '../shared/design/AuthView.css'
 
 const AuthView = () => {
 
@@ -24,6 +23,13 @@ const AuthView = () => {
       password: 'testing2',
       image: 'https://www.thispersondoesnotexist.com/image',
     },
+    {
+      id: "u3",
+      name: "George Costanza",
+      email: 'user@split.com',
+      password: 'password',
+      image: 'https://www.thispersondoesnotexist.com/image',
+    },
     
   ];
 
@@ -33,7 +39,7 @@ const AuthView = () => {
   const [inputEmail, setInputEmail] = useState('')
   const [inputPassword, setInputPassword] = useState('')
   const [inputName, setInputName] = useState('')
-  const [currentUser, setCurrentUser] = useContext(UserContext)
+  const [, setCurrentUser] = useContext(UserContext)
 
   // Dummy-login tills DB och Backend är på plats
   // TODO: Show friendsbar if successful login
@@ -56,8 +62,8 @@ const AuthView = () => {
   }
 
   return (
-    <>
-      <Card className='auth'>
+    <div id='view'>
+      <Card className='view__card'>
         <h2>{isLoginMode ? 'Login' : 'Sign up'}</h2>
         <hr/>
         <form onSubmit={() => submitHandler()}>
@@ -74,7 +80,7 @@ const AuthView = () => {
           <Button inverse onClick={() => setIsLoginMode(prevMode => !prevMode)}>CHANGE TO {isLoginMode ? "SIGN UP" : "LOGIN"}</Button>
 
       </Card>
-    </>
+    </div>
   )
 }
 

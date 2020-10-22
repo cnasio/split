@@ -7,33 +7,39 @@
   text-align: center;
 }
 
-#leftbar_navlink {
+.leftbar_navlinks {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
   font-size: 18px;
+  margin-top: 55px;
 }
 
-#leftbar_navlink > li {
+.leftbar__navlink {
   grid-row: 2;
   color: whitesmoke;
   display: flex;
   text-decoration: none;
-  width: 100%;
+  width: 86%;
   height: 3em;
   justify-content: flex-start;
   align-items: center;
   padding: 10px 5px 10px 25px;
 }
 
-#leftbar_navlink > li:hover {
-  background-color: #272b30;
-  border-radius: 10px;
+.leftbar__navlink--active {
   color: #63fc5d;
 }
 
-#leftbar_navlink > li > .MuiSvgIcon-root {
+.leftbar__navlink:hover {
+  background-color: #272b30;
+  border-radius: 10px;
+  color: #63fc5d;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.leftbar__navlink > .MuiSvgIcon-root {
   font-size: xx-large;
   padding-right: 10px;
 }
@@ -49,5 +55,6 @@
     display: none;
     grid-area: f;
     margin-right: 20px;
+    max-width: 400px;
   }
 }

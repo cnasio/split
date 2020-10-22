@@ -1,4 +1,4 @@
-#navlinks {
+.navlinks {
   max-width: 400px;
   grid-area: cc;
   display: flex;
@@ -8,12 +8,13 @@
   align-items: center;
 }
 
-#navlinks_active {
+.navlink_active {
   color: #63fc5d !important;
   border-bottom: 5px solid #63fc5d;
+  transition: border-bottom 0.15s ease-in-out;
 }
 
-#navlinks li {
+.navlink {
   text-decoration: none;
   color: #222;
   display: flex;
@@ -24,20 +25,21 @@
   width: 70px;
 }
 
-#navlinks > li > .MuiSvgIcon-root {
+.navlink > .MuiSvgIcon-root {
   font-size: xx-large;
   padding-right: 10px;
 }
 
-#navlinks li:hover {
+.navlink:hover {
   background-color: #666;
   cursor: pointer;
   color: #63fc5d;
   border-bottom: 5px solid #63fc5d;
+  transition: border-bottom 0.15s ease-in-out;
 }
 
 @media (max-width: 900px) {
-  #navlinks {
+  .navlinks {
     display: none;
   }
 }

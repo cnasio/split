@@ -1,11 +1,10 @@
 .hamburger {
-  color: black;
+  color: whitesmoke;
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 90%;
-  padding-bottom: 0px;
 }
 
 .hamburger:hover {
@@ -30,11 +29,7 @@
 @media (max-width: 900px) {
   .hamburger {
     grid-area: cc;
-    font-size: x-large;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
 }
 

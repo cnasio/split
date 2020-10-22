@@ -1,4 +1,4 @@
-- -=UPPGIFT 2=-
+-=UPPGIFT 2=-
 
 > > DONE 1. Skapa ett React project (det är OK att använda sig av .tsx, typescript)
 
@@ -27,15 +27,14 @@
 
 > > DONE 6. Ladda upp ditt projekt till Github
 
--= TO DO =-
+-= TO DO/BUGS =-
 
-- function to manage showing and hiding friends list
-- making friends list override other content in max-width: 900px (buggy)
-- implement icons from material icons or similar
 - build avatar component
-- hamburger functionality (show/hide leftBar? or something better?)
 - build LoadingSpinner component (from MERN project)
 - build Modal/ErrorModal component
+- fix bug with leftbar when expanding hamburger and then expanding windows width
+- center leftbar when expanded by hamburger (also profilecard & leftbarnavlinks now lining up correctly)
+- Add basic search functionality
 
 -= VERSIONS =-
 v.20.10.15:
@@ -46,3 +45,12 @@ v.20.10.20:
 
 - Context user implemented so it's available in entire app.
 - Design changes overall, darker theme, button and other UI design added.
+
+v.20.10.21:
+
+- Hiding elements when not logged in
+- Added friends button functionality
+- Added hamburger functionality (showing and hiding left bar)
+- Added sign in button
+- Reworked overall CSS, all views now share #view in global.css
+- many bug fixes with CSS

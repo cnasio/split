@@ -2,6 +2,7 @@
   grid-area: cd;
   background-color: none;
   display: flex;
+  color: whitesmoke;
   justify-content: space-evenly;
   align-items: center;
 }

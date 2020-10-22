@@ -1,16 +1,13 @@
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 import service from '../shared/api/service/service'
 
 import Card from '../components/UIElements/Card/Card'
 import Button from '../components/FormElements/Button/Button'
-import { UserContext } from '../shared/context/UserContext'
-import '../shared/design/HomeView.css'
 
 
 const HomeView = () => {
 
   const [character, setCharacter] = useState()
-  const [currentUser, setCurrentUser] = useContext(UserContext)
 
   const retrieveCharacterFromExternalApi = () => {
     service
@@ -21,14 +18,16 @@ const HomeView = () => {
   }
 
   return (
-    <>
-      <Card className="home_view">
+    <div id='view'>
+      <Card className='view__card'>
+        <h3>HomeView</h3><hr />
+        <p>Testlogin:</p>
+        <p>User: user@split.com</p>
+        <p>Password: password</p>
         <Button  onClick={() => retrieveCharacterFromExternalApi()}>MAKE API CALL</Button>
-        <p>HomeView</p>
-        <p>Currently logged in user: {currentUser.name}</p>
         <p>{character ? character : ''}</p>
       </Card>
-    </>
+    </div>
   )
 }
 

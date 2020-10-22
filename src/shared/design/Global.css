@@ -18,6 +18,33 @@ body {
   height: 100vh;
 }
 
+#view {
+  grid-area: f;
+  display: flex;
+  width: 90%;
+  max-width: 27rem;
+  max-height: 35rem;
+  margin: auto;
+  padding: 1rem 1rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.view__card {
+  grid-area: f;
+  width: 90%;
+  max-width: 17rem;
+  max-height: 35rem;
+  margin: auto;
+  padding: 1rem 5rem 1.5rem;
+  text-align: center;
+}
+
+.view__card > form {
+  padding-bottom: 1rem;
+}
+
 @media (max-width: 1098px) {
   #wrapper {
     grid-template-areas:

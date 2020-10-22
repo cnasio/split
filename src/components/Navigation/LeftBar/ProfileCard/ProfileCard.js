@@ -6,16 +6,15 @@ import './ProfileCard.css'
 
 const ProfileCard = () => {
   
-  const [currentUser, setCurrentUser] = useContext(UserContext)
+  const [currentUser] = useContext(UserContext)
   let characterAmount;
 
-  if(currentUser.name) {
+  if(currentUser.email) {
     characterAmount = currentUser.name.split(' ').join('').length
-    console.log(characterAmount)
   }
   return (
       <>
-        {currentUser.name && (
+        {currentUser.email && (
           <div className="profile_card">
           <div id="profile_card_image">
             <img src={currentUser.image} alt="" />

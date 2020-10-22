@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useContext }  from 'react';
 
+import { UserContext } from '../../../shared/context/UserContext'
 import FriendsBar from './FriendsBar/FriendsBar';
 import InfoBar from './InfoBar/InfoBar';
 import './RightBar.css'
 
 const RightBar = () => {
+
+  const [currentUser] = useContext(UserContext)
+
   return (
-    <aside id="right_bar">
-      <InfoBar />
-      <FriendsBar />
-    </aside>
+    <>
+      {currentUser.email && (<aside id="right_bar">
+        <InfoBar />
+        <FriendsBar />
+      </aside>)}
+    </>
   );
 };
 
