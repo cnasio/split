@@ -3,11 +3,11 @@ import SearchIcon from '@material-ui/icons/Search';
 
 import './SearchBar.css'
 
-const SearchBar = () => {
+const SearchBar = props => {
   return (
     <div className='search'>
-          <input type="text" placeholder="Search..." />
-          <button><SearchIcon /></button>
+          <input type={props.type} onChange={props.onChange} placeholder={props.placeholder} />
+          <button onClick={props.onButtonClick}><SearchIcon /></button>
     </div>
   );
 };

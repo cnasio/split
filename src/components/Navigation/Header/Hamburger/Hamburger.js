@@ -14,9 +14,9 @@ const Hamburger = () => {
   const hamburgerExpandHandler = () => {
     
     if(currentUser.email) {
-      const leftBarElement = document.getElementById('left_bar')
+      const leftBarElement = document.getElementById('left__bar')
       const viewElement = document.getElementById('view')
-      const friendsElement = document.getElementById('friends_bar')
+      const friendsElement = document.getElementById('friends__bar')
       
       if(leftBarElement.style.display === 'none' || !leftBarElement.style.display) {
         leftBarElement.style.display = 'grid'

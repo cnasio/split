@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect }  from 'react';
 import { Link } from 'react-router-dom';
 
 
@@ -14,10 +14,20 @@ import './Header.css'
 // från hamburger och inte redan är i homeview
 
 const Header = () => {
+
+  const [search, setSearch] = useState()
+
+  const searchHandler = e => {
+    e.preventDefault();
+    console.log(search)
+  }
+
   return (
     <header className="header">
       <Link id="logo" to="/home"><img src={logo} alt="" /></Link>
-      <SearchBar />
+      <form onSubmit={searchHandler}>
+      <SearchBar type="text" onButtonClick={searchHandler} onChange={(e) => setSearch(e.target.value)} placeholder="Search..." />
+      </form>
       <NavLinks />
       <Hamburger />
       <NotificationBar />

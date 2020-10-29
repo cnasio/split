@@ -1,6 +1,8 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useContext, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 
+import { UserContext } from '../shared/context/UserContext'
+import RoutingPath from './RoutingPath'
 import HomeView from '../view/HomeView'
 import InventoryView from '../view/InventoryView'
 import CommunityView from '../view/CommunityView'
@@ -12,17 +14,32 @@ import AuthView from '../view/AuthView'
     // Inventory 
     // Friends/Chat (right bar) 
 
+
 const Routing = (props) => {
+
+  const [currentUser, setCurrentUser] = useContext(UserContext)
+
+  const blockRouteifAuth = chosenView => currentUser.email ? HomeView : chosenView      
+  const blockRouteifNotAuth = chosenView => !currentUser.email ? AuthView : chosenView      
+
+  // const checkAuthInBrowser = () => {
+  //   setCurrentUser({email: localStorage.getItem("DUMMY_user")})
+  // }
+
+  // useEffect(() => {
+  //   checkAuthInBrowser()
+  // })
+
   return (
     <Router>
       <Suspense fallback={"Loading..."}>
         {props.children}
         <Switch>
-          <Route exact path="/home" component={HomeView} />
-          <Route exact path="/inventory" component={InventoryView} />
-          <Route exact path="/community" component={CommunityView} />
-          <Route exact path="/auth" component={AuthView} />
-          <Redirect to="/home" />
+          <Route exact path={RoutingPath.homeView} component={blockRouteifNotAuth(HomeView)} />
+          <Route exact path={RoutingPath.inventoryView} component={blockRouteifNotAuth(InventoryView)} />
+          <Route exact path={RoutingPath.communityView} component={blockRouteifNotAuth(CommunityView)} />
+          <Route exact path={RoutingPath.authView} component={blockRouteifAuth(AuthView)} />
+          <Redirect to={RoutingPath.homeView} />
         </Switch>
       </Suspense>
     </Router>
