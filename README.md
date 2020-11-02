@@ -1,3 +1,6 @@
+Till Arasto:
+Det mesta av uppgift3-lösningen finns samlat i src / view / HomeView.js
+
 -=================-
 -= UPPGIFT 3 =-
 -=================-

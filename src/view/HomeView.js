@@ -18,6 +18,17 @@ const HomeView = () => {
   const [search, setSearch] = useState()
   const [recipe, setRecipe] = useState()
   const [number, setNumber] = useState()
+  const [count, setCount] = useState(0);
+
+  // [count] nedan gör att useEffect kommer köra när den förändras
+  // om den lämnas tom [] så körs useEffect varje gång componenten rerenderas
+  useEffect(() => {
+    console.log('useEffect is running')
+    console.log(count)
+    // willunmount:
+    // return () => {console.log('removed component')}
+  }, [count])
+
 
 
   const retrieveCharacterFromExternalApi = () => {
@@ -91,6 +102,13 @@ const HomeView = () => {
           <Button onClick={getDataFromFoodApi}>Recipe API Call</Button>
         </form>
         {showData()}
+      </Card>
+
+      <Card className='view__card'>
+        <h3>useEffect tester in console</h3><hr /><br />
+        <Button onClick={() => setCount(count + 1)}>Add</Button><br /><br />
+        <Button inverse onClick={() => setCount(count - 1)}>Withdraw</Button>
+        <h3>{count}</h3>
       </Card>
 
     </div>
