@@ -1,4 +1,4 @@
-.avatar {
+.profile {
   margin: auto;
   width: 175px;
   color: whitesmoke;
@@ -7,36 +7,36 @@
   justify-content: center;
 }
 
-.avatar > p {
+.profile > p {
   display: flex;
   align-items: center;
 }
 
-.avatar > p:hover {
+.profile > p:hover {
   color: #63fc5d;
   cursor: pointer;
 }
 
-#avatar__image {
+#profile__image {
   width: 40px;
   border-radius: 50%;
   margin-right: 10px;
   border: 1px solid #63fc5d;
 }
 
-#avatar__image:hover {
+#profile__image:hover {
   border: 1px solid whitesmoke;
   cursor: pointer;
 }
 
 @media (max-width: 1098px) {
-  .avatar {
+  .profile {
     font-size: 0;
   }
 }
 
 @media (max-width: 900px) {
-  .avatar {
+  .profile {
     font-size: 100%;
   }
 }

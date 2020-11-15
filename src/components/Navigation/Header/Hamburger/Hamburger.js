@@ -8,12 +8,13 @@ import './Hamburger.css'
 const Hamburger = () => {
 
   const history = useHistory();
-  const [currentUser] = useContext(UserContext)
+  const auth = useContext(UserContext);
+
 
 
   const hamburgerExpandHandler = () => {
     
-    if(currentUser.email) {
+    if(auth.isLoggedIn) {
       const leftBarElement = document.getElementById('left__bar')
       const viewElement = document.getElementById('view')
       const friendsElement = document.getElementById('friends__bar')

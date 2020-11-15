@@ -13,7 +13,7 @@ body {
   grid-template-areas:
     'c c c c c'
     'e . f . g';
-  grid-template-columns: 300px auto minmax(60px, 900px) auto 320px;
+  grid-template-columns: 300px auto minmax(200px, 900px) auto 320px;
   grid-template-rows: 60px minmax(300px, auto);
   height: 100vh;
 }
@@ -21,23 +21,30 @@ body {
 #view {
   grid-area: f;
   display: flex;
-  flex-direction: column;
-  width: 90%;
-  max-width: 27rem;
-  margin: auto;
+  flex-flow: wrap;
+  max-width: 900px;
   padding: 1rem 1rem;
   text-align: center;
   align-items: center;
   justify-content: center;
+  margin-bottom: auto;
+}
+
+#view > h1 {
+  color: whitesmoke;
+  width: 900px;
 }
 
 .view__card {
   grid-area: f;
-  width: 90%;
-  max-width: 17rem;
+  display: flex;
+  width: 100px;
+  flex-direction: column;
   margin: 0.5rem;
   padding: 1rem 5rem 1.5rem;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .view__card > form {

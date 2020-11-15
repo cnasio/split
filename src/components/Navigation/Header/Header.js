@@ -1,6 +1,5 @@
-import React, { useState, useEffect }  from 'react';
+import React, { useState }  from 'react';
 import { Link } from 'react-router-dom';
-
 
 import NavLinks from './NavLinks/NavLinks'
 import Hamburger from './Hamburger/Hamburger';
@@ -13,7 +12,7 @@ import './Header.css'
 // BUGG: logo-länken visar home över leftbar när man öppnat leftbar
 // från hamburger och inte redan är i homeview
 
-const Header = () => {
+const Header = props => {
 
   const [search, setSearch] = useState()
 
@@ -30,7 +29,7 @@ const Header = () => {
       </form>
       <NavLinks />
       <Hamburger />
-      <NotificationBar />
+      <NotificationBar userId={props.userId} />
     </header>
   )
 }

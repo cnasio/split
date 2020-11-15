@@ -1,4 +1,4 @@
-import React, { useContext }  from 'react';
+import React, { useContext } from 'react';
 
 import { UserContext } from '../../../shared/context/UserContext'
 import FriendsBar from './FriendsBar/FriendsBar';
@@ -6,15 +6,18 @@ import InfoBar from './InfoBar/InfoBar';
 import './RightBar.css'
 
 const RightBar = () => {
-
-  const [currentUser] = useContext(UserContext)
+  const auth = useContext(UserContext);
 
   return (
     <>
-      {currentUser.email && (<aside id="right__bar">
-        <InfoBar />
-        <FriendsBar />
-      </aside>)}
+      {auth.isLoggedIn && 
+        (
+          <aside id="right__bar">
+            <InfoBar />
+            <FriendsBar />
+          </aside>
+        )
+      }
     </>
   );
 };
