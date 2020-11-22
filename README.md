@@ -1,25 +1,32 @@
-=== TO DO ===
+=== WIP ===
 
 - Fix avatar look in community cards (hover)
 - Build function to add items
 - Fix items showing in inventory
 - Add basic search functionality (items and users)
+- Friends-functionality
 - Build dropdown in notification bar
   - Profile [NYI] > Inventory > New Item > Settings [NYI] > Log out
-  - Friendslist ska overlappa all annan content istället för att dölja main
+- Friendslist should overlap other content
 
 === BUGS ===
 
 - fix bug with leftbar when expanding hamburger and then expanding windows width
 - fix bug med leftbar expandarad av hamburger, när man ökar width så återkommer inte main och om man stänger den så återkommer inte leftbar vid ökar width
-- Leftbaren hidas inte korrekt om man klickat på någon av länkarna i leftbar och sedan minskar width
+- Leftbaren hidas inte korrekt om man klickat på någon av länkarna i leftbar
+  och sedan minskar width
+- ProfileHeader laddar inte in data efter login, kräver en refresh.
+- Inventory laddar inte in användarens items
 
-.
-.
-.
-.
+  .
+  .
 
 === VERSIONS ===
+
+v.20.11.22
+
+- Removed Uppgift4 temporary code
+- Refactored folder layout in frontend (hooks etc.)
 
 v.20.11.14
 

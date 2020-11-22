@@ -1,5 +1,4 @@
 import React, { useState, useContext } from 'react'
-import Axios from 'axios'
 
 import Card from '../components/UIElements/Card/Card'
 import Input from '../components/FormElements/Input/Input'
@@ -104,17 +103,6 @@ const AuthView = () => {
     }
   };
 
-  const [message, setMessage] = useState()
-
-  const uppgiftFyraHandler = async e => {
-    e.preventDefault();
-    
-    Axios.get(`${process.env.REACT_APP_BACKEND_URL}/knapp/`)
-    .then((res) => setMessage(res.data))
-    .catch((err) => console.log(err))
-    
-  }
-
 
   return (
     <div id='view'>
@@ -169,13 +157,6 @@ const AuthView = () => {
         <Button inverse onClick={switchModeHandler}>
           {isLoginMode ? 'SWITCH TO SIGN UP' : 'SWITCH TO LOGIN'}
         </Button>
-      </Card>
-      <Card className='view__card'>
-      <Button onClick={uppgiftFyraHandler}>
-          TESTA UPPGIFT 4 (Hämta data från backend)
-        </Button>
-        <br />
-        {message && message}
       </Card>
     </div>
   )
