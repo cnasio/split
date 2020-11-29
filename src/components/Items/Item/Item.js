@@ -40,18 +40,6 @@ const Item = props => {
   return (
     <>
       <ErrorModal error={error} onClear={clearError} />
-      {/* <Modal
-        show={showMap}
-        onCancel={closeMapHandler}
-        header={props.address}
-        contentClass="place-item__modal-content"
-        footerClass="place-item__modal-actions"
-        footer={<Button onClick={closeMapHandler}>CLOSE</Button>}
-      >
-        <div className="map-container">
-          <Map center={props.coordinates} zoom={16} />
-        </div>
-      </Modal> */}
       <Modal
         show={showConfirmModal}
         onCancel={cancelDeleteHandler}
